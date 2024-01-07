@@ -37,7 +37,6 @@ setTimeout(function() {
 setTimeout(function() {
 
 var TBContent = document.createElement("div");
-TBContent.classList.add("window");
 TBContent.id = "taskbar";
 TBContent.style.width = "100%";
 TBContent.style.position = "fixed";  // Use 'fixed' instead of 'absolute'
@@ -51,10 +50,10 @@ TBContent.style.alignItems = "center";  // Vertically center the content
 
 
 var StartBtn = document.createElement("button");
-StartBtn.textContent = "Start";
+StartBtn.textContent = "Menu";
 StartBtn.style.fontSize = "13px";
 StartBtn.style.height = "80%";
-StartBtn.style.fontWeight = "600";
+StartBtn.style.fontWeight = "500";
 // StartBtn.addEventListener("click", Logon);
 
 TBContent.appendChild(StartBtn);
@@ -62,6 +61,7 @@ TBContent.appendChild(StartBtn);
 document.body.appendChild(TBContent);
 
 }, 1500);
+
 
 setTimeout(function() {
     pID = genpID();

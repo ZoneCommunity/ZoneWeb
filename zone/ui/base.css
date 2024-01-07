@@ -737,3 +737,23 @@ table > tbody > tr > * {
     padding: 0 6px;
 }
 /*# sourceMappingURL=98.css.map */
+
+
+#taskbar {
+    position: relative; /* Add this line to make the pseudo-element positioned relative to the taskbar */
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px; /* Adjust padding as needed */
+}
+
+#taskbar button {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+#taskbar div {
+    margin-left: auto; /* Push time display to the right */
+}
