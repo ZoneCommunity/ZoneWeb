@@ -108,10 +108,10 @@ input[type="submit"]:disabled {
     text-shadow: 1px 1px 0 #fff;
 }
 .window {
-    background-color: rgba(255, 255, 255, 0.539);
+    background-color: rgb(255, 255, 255);
 
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    /* backdrop-filter: blur(40px); */
+    /* -webkit-backdrop-filter: blur(40px); */
     border-radius: 6px;
     outline-color: rgba(193, 193, 193, 0.488);
     outline-style: solid;
@@ -121,10 +121,10 @@ input[type="submit"]:disabled {
 }
 .title-bar {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.074);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    padding: 2px 4px 2px 12px;
+    padding: 1px 2px 1px 10px;
     box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.05);
 }
 .title-bar.inactive button {
@@ -132,12 +132,12 @@ input[type="submit"]:disabled {
 }
 
 .title-bar.inactive {
-    background-color: rgba(255, 255, 255, 0.914);
+    background-color: rgb(227, 227, 227);
 
 }
 
 .window.inactive {
-    background-color: rgba(255, 255, 255, 0.914);
+    background-color: rgb(227, 227, 227);
 }
 
 .title-bar-text {
@@ -145,7 +145,7 @@ input[type="submit"]:disabled {
     font-weight: 6f00;
     letter-spacing: 0;
     margin-right: 24px;
-    font-size: 13px;
+    font-size: 12px;
 }
 .title-bar-controls {
     display: flex;
@@ -169,25 +169,31 @@ input[type="submit"]:disabled {
 }
 
 .title-bar-controls button:hover {
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: rgb(238, 238, 238);
 }
+
+.title-bar-controls button[aria-label="Close"]:hover {
+    background-color: rgb(236, 81, 117);
+    background-image: url("/zone/assets/CloseW.svg");
+}
+
 
 .title-bar-controls button[aria-label="Minimize"] {
     background-image: url("/zone/assets/Minimize.svg");
     background-position: center;
-    background-size: 10px;
+    background-size: 9px;
     background-repeat: no-repeat;
 }
 .title-bar-controls button[aria-label="Maximize"] {
     background-image: url("/zone/assets/Maximize.svg");
     background-position: center;
-    background-size: 10px;
+    background-size: 9px;
     background-repeat: no-repeat;
 }
 .title-bar-controls button[aria-label="Restore"] {
     background-image: url("/zone/assets/Restore.svg");
     background-position: center;
-    background-size: 10px;
+    background-size: 9px;
     background-repeat: no-repeat;
 }
 .title-bar-controls button[aria-label="Help"] {
@@ -198,7 +204,7 @@ input[type="submit"]:disabled {
 .title-bar-controls button[aria-label="Close"] {
     background-image: url("/zone/assets/Close.svg");
     background-position: center;
-    background-size: 10px;
+    background-size: 9px;
     background-repeat: no-repeat;
 }
 .status-bar {
