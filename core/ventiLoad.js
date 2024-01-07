@@ -26,7 +26,7 @@ function BootScreen() {
     
         // Add a logo
         const logoElement = document.createElement("img");
-        logoElement.src = "../zone/assets/ZC_Logo_White.png"; 
+        logoElement.src = "/zone/assets/ZC_Logo_White.png"; 
         logoElement.style.width = "150px"; 
         logoElement.style.height = "150px"; 
     
