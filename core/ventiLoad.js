@@ -26,15 +26,15 @@ function BootScreen() {
     
         // Add a logo
         const logoElement = document.createElement("img");
-        logoElement.src = "../zone/assets/ZC_Logo_White.png"; // Replace with the path to your logo
-        logoElement.style.width = "150px"; // Adjust the width as needed
-        logoElement.style.height = "150px"; // Adjust the height as needed
+        logoElement.src = "../zone/assets/ZC_Logo_White.png"; 
+        logoElement.style.width = "150px"; 
+        logoElement.style.height = "150px"; 
     
         // Add a loading bar container with full-size transparency
         const loadingBarContainer = document.createElement("div");
         loadingBarContainer.id = "loading-bar-container";
-        loadingBarContainer.style.width = "200px"; // Adjust the width of the container
-        loadingBarContainer.style.height = "5px"; // Adjust the height of the container
+        loadingBarContainer.style.width = "200px";
+        loadingBarContainer.style.height = "5px";
         loadingBarContainer.style.marginTop = "20px"; // Adjust the top margin
         loadingBarContainer.style.background = "rgba(255, 255, 255, 0.2)"; // Transparent white background
         loadingBarContainer.style.borderRadius = "10px";
@@ -54,7 +54,6 @@ function BootScreen() {
         loadingElement.appendChild(loadingBarContainer);
         document.body.appendChild(loadingElement);
     
-        // Simulate loading progress (you can replace this with your actual loading logic)
         let progress = 0;
         const interval = setInterval(function () {
             progress += 5;

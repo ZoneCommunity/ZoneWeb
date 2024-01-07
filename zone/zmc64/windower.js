@@ -259,14 +259,10 @@ function onContentAdded(mutationsList, observer) {
 const observer = new MutationObserver(onContentAdded);
 
 // Specify the target node and options for the observer
-const targetNode = document.body; // You can change this based on your HTML structure
+const targetNode = document.body;
 const config = { childList: true, subtree: true };
 
-// Start observing the target node for mutations
 observer.observe(targetNode, config);
-
-// Later, you can disconnect the observer if needed
-// observer.disconnect();
 
 // Call WindowTracking on existing windows
 document.querySelectorAll('.window').forEach(WindowTracking);
